@@ -1,3 +1,5 @@
+package sudoku;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -112,13 +114,13 @@ import java.util.Random;
 
         public void jogar() {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Bem vindo ao Sudoku!");
+            System.out.println("Bem vindo ao sudoku.Sudoku!");
             System.out.println("Digite linha coluna valor para jogar (ex: 0 1 5)");
             System.out.println("Comandos especiais: 'ajuda' para ver solução, 'sair' para encerrar.");
             while (true) {
                 mostrarTabuleiro();
                 if (completo()) {
-                    System.out.println("Parabéns! Você completou o Sudoku!");
+                    System.out.println("Parabéns! Você completou o sudoku.Sudoku!");
                     break;
                 }
                 System.out.print("Sua jogada: ");
@@ -147,7 +149,7 @@ import java.util.Random;
                     if (validarNum(board, row, col, val)) {
                         board[row][col] = val;
                     } else {
-                        System.out.println("Jogada inválida segundo as regras do Sudoku.");
+                        System.out.println("Jogada inválida segundo as regras do sudoku.Sudoku.");
                     }
                 } else if (board[row][col] != 0) {
                     System.out.println("Posição já preenchida.");
